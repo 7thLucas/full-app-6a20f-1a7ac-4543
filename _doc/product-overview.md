@@ -6,6 +6,29 @@
 
 ---
 
+## Build Status — v1 Shipped
+
+The initial GlowDesk build is live. The product is a working, end-to-end salon operations app — not a prototype — covering the full MVP scope plus the first wave of post-MVP capabilities.
+
+**Live now:**
+
+- **Operator dashboard** at `/` — revenue booked, reminders due, walk-ins, lapsed clients, restock alerts, next-up at a glance
+- **Smart appointment booking**
+  - `/schedule` — day-timeline view of all stylists and appointments
+  - `/schedule/new` — owner booking flow with conflict prevention
+  - `/book` — public client self-booking flow (shareable link)
+  - `/book/confirmed` — thank-you confirmation + automated email confirmation
+- **Stylist management** at `/stylists` — team list, specialties, weekly bookings/revenue, working hours
+- **Inventory** at `/inventory` — products with low/out-of-stock badges, category filters, +/- stock controls
+- **Clients** at `/clients` and `/clients/:id` — search, filters (All / Lapsed / Loyal / Recent), retention follow-up action, full visit history
+- **Auth** — login, register, logout, forgot-password
+- **Email confirmations** powered by EmailService
+- **Brand system applied** — GlowDesk Pink (`#D946A6`), Fraunces serif headings, Inter UI, warm cream canvas, mobile-first layouts throughout
+
+**Post-MVP roadmap pre-staged on the Goal DAG:** Stylist management, Inventory tracking, and the Client retention loop are now scaffolded as container goals on the roadmap, ready for the next iteration cycle.
+
+---
+
 ## Elevator Pitch
 
 GlowDesk is the smart salon management app for small-to-medium beauty salon owners. It replaces WhatsApp threads, paper appointment books, and scattered spreadsheets with a single, mobile-friendly platform: real-time stylist scheduling, client self-booking with automated reminders, product inventory tracking, and built-in client retention tools. GlowDesk turns every chair into a revenue opportunity and every visit into a reason to come back.
