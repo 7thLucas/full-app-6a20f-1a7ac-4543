@@ -1,0 +1,1 @@
+Build me an app for beauty salon owners to help them manage appointments, stylists, and product inventory with the goal to maximize bookings and keep clients coming back
