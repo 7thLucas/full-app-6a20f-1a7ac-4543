@@ -1,0 +1,97 @@
+<style>
+  .mode-landscape .sl-live-layout { display: grid; grid-template-columns: 1.05fr 1fr; gap: 1.5rem; height: 100%; }
+  .mode-landscape .sl-live-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.85rem; align-content: start; }
+  .mode-portrait .sl-live-layout { display: flex; flex-direction: column; gap: 1.25rem; height: 100%; }
+  .mode-portrait .sl-live-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+</style>
+<section class="w-full h-full overflow-auto bg-white p-10">
+
+  <div class="flex items-center justify-between mb-4">
+    <p class="text-xs font-bold tracking-widest uppercase" style="color:#D946A6;">Build Status — v1 Shipped</p>
+    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold" style="background:#ecfdf5; color:#047857; border:1px solid #a7f3d0;">
+      <span style="width:6px; height:6px; border-radius:50%; background:#10b981; display:inline-block;"></span>
+      Live now
+    </span>
+  </div>
+
+  <h2 class="font-black leading-tight mb-2" style="font-size:1.9rem; color:#0f172a; letter-spacing:-0.01em;">The salon, working end-to-end.</h2>
+  <p class="text-base mb-7 max-w-3xl" style="color:#64748b;">GlowDesk v1 is a complete operations app — operator dashboard, smart booking, stylists, inventory, clients, and auth — all wearing the GlowDesk Pink brand and built mobile-first.</p>
+
+  <div class="sl-live-layout">
+
+    <div class="sl-live-grid">
+
+      <article class="rounded-2xl p-4" style="background: linear-gradient(135deg,#fdf2f8,#fff); border:1px solid #f9a8d4;">
+        <p class="text-[10px] font-mono font-bold mb-1" style="color:#be185d;">/</p>
+        <h3 class="font-bold text-sm mb-1" style="color:#0f172a;">Operator Dashboard</h3>
+        <p class="text-xs leading-relaxed" style="color:#475569;">Revenue booked, reminders due, walk-ins, lapsed clients, restock alerts, next-up.</p>
+      </article>
+
+      <article class="rounded-2xl p-4" style="background: linear-gradient(135deg,#fdf2f8,#fff); border:1px solid #f9a8d4;">
+        <p class="text-[10px] font-mono font-bold mb-1" style="color:#be185d;">/schedule</p>
+        <h3 class="font-bold text-sm mb-1" style="color:#0f172a;">Day Timeline</h3>
+        <p class="text-xs leading-relaxed" style="color:#475569;">Every stylist, every appointment, visible at a glance for the day.</p>
+      </article>
+
+      <article class="rounded-2xl p-4" style="background: linear-gradient(135deg,#fdf2f8,#fff); border:1px solid #f9a8d4;">
+        <p class="text-[10px] font-mono font-bold mb-1" style="color:#be185d;">/schedule/new&nbsp;&middot;&nbsp;/book</p>
+        <h3 class="font-bold text-sm mb-1" style="color:#0f172a;">Booking Flows</h3>
+        <p class="text-xs leading-relaxed" style="color:#475569;">Owner booking with conflict prevention. Public client self-booking + email confirmation.</p>
+      </article>
+
+      <article class="rounded-2xl p-4" style="background: linear-gradient(135deg,#fdf2f8,#fff); border:1px solid #f9a8d4;">
+        <p class="text-[10px] font-mono font-bold mb-1" style="color:#be185d;">/stylists</p>
+        <h3 class="font-bold text-sm mb-1" style="color:#0f172a;">Stylist Management</h3>
+        <p class="text-xs leading-relaxed" style="color:#475569;">Team list, specialties, weekly bookings &amp; revenue, working hours.</p>
+      </article>
+
+      <article class="rounded-2xl p-4" style="background: linear-gradient(135deg,#fdf2f8,#fff); border:1px solid #f9a8d4;">
+        <p class="text-[10px] font-mono font-bold mb-1" style="color:#be185d;">/inventory</p>
+        <h3 class="font-bold text-sm mb-1" style="color:#0f172a;">Inventory</h3>
+        <p class="text-xs leading-relaxed" style="color:#475569;">Low / out-of-stock badges, category filters, +/- stock controls.</p>
+      </article>
+
+      <article class="rounded-2xl p-4" style="background: linear-gradient(135deg,#fdf2f8,#fff); border:1px solid #f9a8d4;">
+        <p class="text-[10px] font-mono font-bold mb-1" style="color:#be185d;">/clients</p>
+        <h3 class="font-bold text-sm mb-1" style="color:#0f172a;">Clients &amp; Retention</h3>
+        <p class="text-xs leading-relaxed" style="color:#475569;">Search, filters (All / Lapsed / Loyal / Recent), follow-up action, visit history.</p>
+      </article>
+
+    </div>
+
+    <div class="flex flex-col gap-4">
+
+      <div class="rounded-2xl p-5" style="background: linear-gradient(135deg, #D946A6, #be185d);">
+        <p class="text-xs font-bold uppercase tracking-widest mb-2" style="color:rgba(255,255,255,0.7);">Brand system applied</p>
+        <p class="font-bold text-white text-lg leading-snug mb-3">GlowDesk Pink, Fraunces headings, Inter UI, warm cream canvas — mobile-first throughout.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold" style="background:rgba(255,255,255,0.18); color:#fff;">#D946A6</span>
+          <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold" style="background:rgba(255,255,255,0.18); color:#fff;">Fraunces</span>
+          <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold" style="background:rgba(255,255,255,0.18); color:#fff;">Inter</span>
+          <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold" style="background:rgba(255,255,255,0.18); color:#fff;">Mobile-first</span>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-5 border" style="background:#fff; border-color:#e2e8f0;">
+        <p class="text-xs font-bold uppercase tracking-widest mb-2" style="color:#94a3b8;">Foundations in place</p>
+        <ul class="space-y-2">
+          <li class="flex items-start gap-2 text-xs" style="color:#374151;">
+            <span class="mt-1.5" style="width:6px; height:6px; border-radius:50%; background:#D946A6; flex-shrink:0;"></span>
+            <span><span class="font-semibold" style="color:#0f172a;">Auth.</span> Login, register, logout, forgot-password.</span>
+          </li>
+          <li class="flex items-start gap-2 text-xs" style="color:#374151;">
+            <span class="mt-1.5" style="width:6px; height:6px; border-radius:50%; background:#D946A6; flex-shrink:0;"></span>
+            <span><span class="font-semibold" style="color:#0f172a;">Email confirmations</span> via EmailService.</span>
+          </li>
+          <li class="flex items-start gap-2 text-xs" style="color:#374151;">
+            <span class="mt-1.5" style="width:6px; height:6px; border-radius:50%; background:#D946A6; flex-shrink:0;"></span>
+            <span><span class="font-semibold" style="color:#0f172a;">Roadmap pre-staged.</span> Stylist depth, inventory tracking, and the client retention loop are scaffolded on the Goal DAG.</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
