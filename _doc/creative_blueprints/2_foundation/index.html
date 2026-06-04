@@ -1,40 +1,53 @@
 <style>
-  .mode-landscape .sl-foundation-layout { display: flex; flex-direction: row; align-items: stretch; min-height: 100%; }
-  .mode-landscape .sl-content-panel { width: 55%; padding: 3rem; display: flex; flex-direction: column; justify-content: center; }
-  .mode-landscape .sl-visual-panel { width: 45%; min-height: 0; }
-  .mode-portrait .sl-foundation-layout { display: flex; flex-direction: column; min-height: 100%; }
-  .mode-portrait .sl-content-panel { padding: 2rem 1.5rem; }
-  .mode-portrait .sl-visual-panel { min-height: 280px; }
+  .mode-landscape .sl-found-layout { display: flex; flex-direction: row; align-items: stretch; height: 100%; }
+  .mode-landscape .sl-found-content { width: 56%; display: flex; flex-direction: column; justify-content: center; padding: 3rem 2.75rem; }
+  .mode-landscape .sl-found-visual { width: 44%; position: relative; overflow: hidden; }
+  .mode-portrait .sl-found-layout { display: flex; flex-direction: column; height: 100%; }
+  .mode-portrait .sl-found-content { padding: 2.5rem 2rem; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .mode-portrait .sl-found-visual { height: 240px; flex-shrink: 0; position: relative; overflow: hidden; }
 </style>
 <section class="w-full h-full overflow-auto bg-white">
-  <div class="sl-foundation-layout">
-    <div class="sl-content-panel">
-      <div class="flex items-center justify-between mb-4">
-        <span class="inline-block text-xs font-semibold tracking-widest uppercase" style="color:#D946A6;">Foundation</span>
-        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 border rounded-full" style="background-color:#D946A6; border-color:#D946A630;">
-          <span class="text-xs font-semibold" style="color:#ffffff;">Validated</span>
+  <div class="sl-found-layout">
 
-        </span>
-      </div>
-      <h1 class="text-3xl font-bold text-slate-900 leading-tight mb-8">Fragmented salon operations</h1>
-      <div class="space-y-5">
-        <div class="border-l-4 pl-4 relative" style="border-color:#F43F5E;">
-          <h2 class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#E11D48;">The Problem</h2>
-          <p class="text-slate-700 leading-relaxed text-sm">Beauty salon owners juggle multiple systems to manage appointments, assign stylists, track inventory, and follow up with clients. Overbooking, underutilized stylists, stockouts, and forgotten follow-ups erode profitability and customer loyalty.</p>
+    <div class="sl-found-content">
+      <p class="text-xs font-bold tracking-widest uppercase mb-6" style="color:#D946A6;">The Foundation</p>
+      <h2 class="font-black leading-tight mb-8" style="font-size:2rem; color:#0f172a; letter-spacing:-0.01em;">Salons run on chaos.<br>Revenue escapes through the gaps.</h2>
+
+      <div class="space-y-5 mb-8">
+
+        <div class="flex gap-4 p-4 rounded-xl" style="background:#fff1f2; border-left:4px solid #f43f5e;">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-wide mb-1" style="color:#e11d48;">The Problem</p>
+            <p class="text-sm leading-relaxed" style="color:#374151;">Salon owners coordinate appointments over WhatsApp, track inventory on paper, and manage stylists from memory. The result: double-bookings, no-shows with no warning, inventory running dry mid-appointment, and clients who drift away because no one followed up.</p>
+          </div>
         </div>
-        <div class="border-l-4 pl-4 relative" style="border-color:#D946A6;">
-          <h2 class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#D946A6;">The Solution</h2>
-          <p class="text-slate-700 leading-relaxed text-sm">Beauty salon owners struggle with manual appointment scheduling, disorganized stylist assignments, scattered inventory tracking, and missed follow-ups—leading to double bookings, low utilization rates, and lost repeat customers.</p>
+
+        <div class="flex gap-4 p-4 rounded-xl" style="background:#fdf4ff; border-left:4px solid #D946A6;">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-wide mb-1" style="color:#D946A6;">The Solution</p>
+            <p class="text-sm leading-relaxed" style="color:#374151;">GlowDesk gives hands-on salon owners — often stylists themselves — one calm mobile app: real-time availability, client self-booking, automated reminders, stylist management, inventory alerts, and built-in retention tools. Replace the chaos without changing how salons think.</p>
+          </div>
         </div>
-        <div class="border-l-4 border-sky-500 pl-4 relative"><h2 class="text-sm font-semibold text-sky-600 uppercase tracking-wide mb-1">Target Audience</h2><p class="text-slate-700 leading-relaxed text-sm">Independent and multi-location beauty salon owners with 2–20 stylists</p></div>
-        <div class="border-l-4 border-amber-500 pl-4 relative"><h2 class="text-sm font-semibold text-amber-600 uppercase tracking-wide mb-1">Personal Motivation</h2><p class="text-slate-700 leading-relaxed text-sm">Reclaim time spent on admin, increase chair utilization, and build lasting client relationships through seamless experience</p></div>
+
       </div>
-      <div class="mt-6 flex flex-wrap gap-2"><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">salon management</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">appointment scheduling</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">inventory control</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">customer retention</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">resource optimization</span></div>
-      <div class="mt-8"><data-attribution /></div>
+
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 rounded-full text-xs font-medium" style="background:#fdf2f8; color:#be185d;">1–10 stylists</span>
+        <span class="px-3 py-1 rounded-full text-xs font-medium" style="background:#fdf2f8; color:#be185d;">mobile-first</span>
+        <span class="px-3 py-1 rounded-full text-xs font-medium" style="background:#fdf2f8; color:#be185d;">no double-bookings</span>
+        <span class="px-3 py-1 rounded-full text-xs font-medium" style="background:#fdf2f8; color:#be185d;">client retention</span>
+        <span class="px-3 py-1 rounded-full text-xs font-medium" style="background:#fdf2f8; color:#be185d;">inventory tracking</span>
+      </div>
     </div>
-    <div class="sl-visual-panel relative">
-      <img src="http://localhost:8001/common/image-generation?prompt=frustrated salon owner surrounded by scattered appointment books, inventory sheets, and sticky notes, overwhelmed desk" alt="visual" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent opacity-40"></div>
+
+    <div class="sl-found-visual">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=overwhelmed%20salon%20owner%20looking%20at%20a%20cluttered%20desk%20with%20sticky%20notes%2C%20paper%20appointment%20book%2C%20WhatsApp%20messages%2C%20and%20scattered%20inventory%20lists%2C%20stressed%20expression%2C%20warm%20editorial%20photo"
+        alt="The problem — manual salon operations"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(255,255,255,0.55) 0%, transparent 35%);"></div>
     </div>
+
   </div>
 </section>
