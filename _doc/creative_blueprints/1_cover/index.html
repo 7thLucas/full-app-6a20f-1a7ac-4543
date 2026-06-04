@@ -1,39 +1,41 @@
 <style>
-  .mode-landscape .sl-cover-layout { display: flex; flex-direction: row; align-items: stretch; min-height: 100%; }
-  .mode-landscape .sl-content-panel { width: 55%; display: flex; flex-direction: column; justify-content: center; }
-  .mode-landscape .sl-image-panel { width: 45%; min-height: 0; }
-  .mode-portrait .sl-cover-layout { display: flex; flex-direction: column; min-height: 100%; }
-  .mode-portrait .sl-content-panel { flex: 1; display: flex; flex-direction: column; justify-content: center; padding-bottom: 1.5rem; }
-  .mode-portrait .sl-image-panel { min-height: 280px; flex-shrink: 0; }
+  .mode-landscape .sl-cover-layout { display: flex; flex-direction: row; align-items: stretch; height: 100%; }
+  .mode-landscape .sl-content-col { width: 52%; display: flex; flex-direction: column; justify-content: space-between; padding: 3rem 2.5rem; }
+  .mode-landscape .sl-image-col { width: 48%; position: relative; overflow: hidden; }
+  .mode-portrait .sl-cover-layout { display: flex; flex-direction: column; height: 100%; }
+  .mode-portrait .sl-content-col { flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2.5rem 2rem; }
+  .mode-portrait .sl-image-col { height: 260px; flex-shrink: 0; position: relative; overflow: hidden; }
 </style>
 <section class="w-full h-full overflow-auto bg-white">
-  <div class="sl-cover-layout h-full">
-    <div class="sl-content-panel px-10 py-12">
-      <div class="flex flex-col justify-between h-full">
-        <div>
-          <p class="text-sm font-medium tracking-widest uppercase mb-6" style="color:#D946A6;">Beauty Salon Owner</p>
-          <h1 class="text-5xl font-bold text-slate-900 leading-tight mb-6">Salon Pro: All-in-One Salon Management</h1>
-          <p class="text-xl text-slate-600 leading-relaxed max-w-md mb-6">Unified platform to manage appointments, stylists, and product inventory—designed to maximize bookings and keep clients coming back.</p>
-          <div class="inline-flex items-center gap-3 border rounded-lg px-4 py-3" style="background-color:#EC4899; border-color:#D946A640;">
-            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#D946A6;">
-              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-              </svg>
-            </div>
-            <span class="text-sm font-medium px-1" style="color:#ffffff;">Core vision: Simplified productivity</span>
+  <div class="sl-cover-layout">
 
-          </div>
-        </div>
-        <div class="mt-auto pt-8">
-          <data-attribution />
+    <div class="sl-content-col">
+      <div>
+        <p class="text-xs font-bold tracking-widest uppercase mb-5" style="color:#D946A6;">Beauty Salon Management</p>
+        <h1 class="font-black leading-none mb-5" style="font-size:3.4rem; color:#0f172a; letter-spacing:-0.02em;">Every chair.<br>Every client.<br>Always full.</h1>
+        <p class="text-lg leading-relaxed mb-8" style="color:#475569; max-width:26rem;">GlowDesk replaces WhatsApp threads and paper books with one calm, mobile-friendly platform — smart booking, stylist scheduling, inventory, and client retention built for salon owners who work the floor.</p>
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold" style="background-color:#fdf2f8; color:#be185d; border:1px solid #f9a8d4;">
+          <span style="width:7px; height:7px; border-radius:50%; background:#D946A6; display:inline-block; flex-shrink:0;"></span>
+          MVP: Smart appointment booking — live now
         </div>
       </div>
+
+      <div>
+        <data-attribution />
+      </div>
     </div>
-    <div class="sl-image-panel relative overflow-hidden">
-      <div class="absolute inset-0" style="background:linear-gradient(135deg, #D946A6, #D946A620);"></div>
+
+    <div class="sl-image-col">
+      <div class="absolute inset-0" style="background: linear-gradient(145deg, #fdf2f8 0%, #fce7f3 40%, #f0abfc 100%);"></div>
       <div class="absolute inset-0 flex items-center justify-center p-8">
-        <img src="http://localhost:8001/common/image-generation?prompt=modern beauty salon reception desk with appointments displayed on digital screen, stylists and clients in warm professional lighting" alt="cover" class="max-w-full max-h-full object-contain drop-shadow-2xl rounded-2xl" />
+        <img
+          src="http://localhost:8001/common/image-generation?prompt=modern%20beauty%20salon%20interior%2C%20warm%20natural%20light%2C%20a%20stylist%20consulting%20with%20a%20smiling%20client%20at%20a%20sleek%20station%2C%20clean%20rose%20and%20white%20aesthetic%2C%20editorial%20photo"
+          alt="GlowDesk — modern beauty salon"
+          class="max-w-full max-h-full object-cover rounded-2xl"
+          style="box-shadow: 0 20px 60px rgba(217,70,166,0.18);"
+        />
       </div>
     </div>
+
   </div>
 </section>
