@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: full-app-6a20f-1a7ac-4543
+  namespace: qb-prototypes
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: full-app-6a20f-1a7ac-4543
+  template:
+    metadata:
+      labels:
+        app: full-app-6a20f-1a7ac-4543
+    spec:
+      imagePullSecrets:
+      - name: qtn-dockerhub
+      containers:
+      - name: web
+        image: quantumteknologi/full-app-6a20f-1a7ac-4543
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "512Mi"
+          limits:
+            cpu: "2"
+            memory: "2Gi"
+        env:
+        - name: WATCHPACK_POLLING
+          value: "true"
