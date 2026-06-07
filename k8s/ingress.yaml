@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: full-app-6a20f-1a7ac-4543-ingress
+  name: nzo1ucxz-4543-development-ingress
   namespace: qb-prototypes
   annotations:
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-southeast-3:071784445115:certificate/a9e32c68-66fc-4d96-a03d-bd6eea4d41f8
@@ -21,6 +21,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: full-app-6a20f-1a7ac-4543-svc
+            name: nzo1ucxz-4543-development-svc
             port:
               number: 80

@@ -9,12 +9,12 @@ build:
     useBuildkit: true
     concurrency: 0
   artifacts:
-  - image: quantumteknologi/full-app-6a20f-1a7ac-4543
+  - image: quantumteknologi/nzo1ucxz-4543-development
     context: .
     docker:
       dockerfile: Dockerfile.dev
       cliFlags:
-        - "--cache-from=quantumteknologi/full-app-6a20f-1a7ac-4543:latest"
+        - "--cache-from=quantumteknologi/nzo1ucxz-4543-development:latest"
         - "--build-arg=BUILDKIT_INLINE_CACHE=1"
     sync:
       manual:

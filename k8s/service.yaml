@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: full-app-6a20f-1a7ac-4543-svc
+  name: nzo1ucxz-4543-development-svc
   namespace: qb-prototypes
 spec:
   selector:
-    app: full-app-6a20f-1a7ac-4543
+    app: nzo1ucxz-4543-development
   ports:
   - port: 80
     targetPort: 3000
